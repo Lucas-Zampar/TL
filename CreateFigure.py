@@ -18,7 +18,7 @@ def create_figure(vector3d, vector2d):
 
     set_lim_2d(ax2d, vector2d)
     set_label_2d(ax2d)
-    add_cartesian_2d(ax2d)
     add_annotations_2d(ax2d, vector2d)
+    add_cartesian_2d(ax2d)
     plot_vector_2d(ax2d, vector2d)
     return fig 

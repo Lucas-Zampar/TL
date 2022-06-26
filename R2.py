@@ -28,6 +28,9 @@ def add_annotations_2d(ax, vector):
     ax.scatter(x,0, c='b', label=f'x: ( {x:.2f}, 0.0 )'  )
     ax.scatter(0,y, c='g', label=f'y: ( 0.0, {y:.2f} )')
     
+    ax.plot((0,x), (0,0), c='b')
+    ax.plot((0,0), (0,y), c='g')
+    
     ax.plot((x,x), (0,y), 'g--')
     ax.plot((0,x), (y,y), 'b--')
     
