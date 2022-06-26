@@ -101,8 +101,8 @@ def add_annotations_3d(ax, vector):
     ax.scatter3D(0,y,0, c='g', label=f'y: ( 0.0, {y:.2f}, 0.0 )')
     ax.scatter3D(0,0,z, c='r', label=f'z: ( 0.0, 0.0, {z:.2f} )')
     
-    ax.plot3D((0,x), (0,0), (0,0), c='g')
-    ax.plot3D((0,0), (0,y), (0,0), c='b')
+    ax.plot3D((0,x), (0,0), (0,0), c='b')
+    ax.plot3D((0,0), (0,y), (0,0), c='g')
     ax.plot3D((0,0), (0,0), (0,z), c='r')
     
     ax.plot3D((x,x), (0,y), (0,0), 'g--')
